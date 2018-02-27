@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Crystal Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="./assets/css/style.css"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="reset" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    
-    
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Crystal Game!</h1>
+            <p class="lead">Click on the crystals to add points and try to match the target number!</p>
+        </div>
+    </div>
+    <br>
+    <!-- Counter and Current Number and win/loss -->
+
+    <div class="content">
+
+        <div id="generator" style="width: 18rem;">
+            <p>Target Number: <span id="target"></span> 
+            </p>
+        </div>
+
+
+        <div class="score" style="width: 18rem;">
+            <p >Current Score: <span id="current"></span>
+
+            </p>
+        </div>
+
+        <div class="wins" style="width: 18rem;">
+            <p> Wins: <span id="win"></span>
+            </p>
+        </div>
+
+        <div class="losses" style="width: 18rem;">
+            <p> Losses: <span id="loss"></span>
+            </p>
+        </div>
+    </div>
+
+
+
+    <!-- crystals -->
+    <br>
+    <div class="gems">
+        <img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
+        <img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
+        <img src="assets/images/red.png" class=gemImage id="three" alt="Red Gem">
+        <img src="assets/images/yellow.png" class=gemImage id="four" alt="Yellow Gem">
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
+
 </html>
